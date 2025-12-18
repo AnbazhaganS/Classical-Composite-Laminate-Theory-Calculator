@@ -225,8 +225,8 @@ def abd(Q, angles, thickness, truncate=False):
 
         # Calculate the contribution to the A, B and D matrix of this layer.
         Ai = Q_bar * (z_bot - z_top)
-        Bi = 1/2 * Q_bar * (z_bot**2 - z_top**2)
-        Di = 1/3 * Q_bar * (z_bot**3 - z_top**3)
+        Bi = 1./2 * Q_bar * (z_bot**2 - z_top**2)
+        Di = 1./3 * Q_bar * (z_bot**3 - z_top**3)
 
         # Summ this layer to the previous ones.
         A = A + Ai
